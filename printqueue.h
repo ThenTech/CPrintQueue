@@ -3,7 +3,7 @@
 #include <string.h>
 
 ///*
-//*	Maximum length of a string..
+//*	Maximum length of a string.
 //*/
 //#define MAX_STRING	50
 
