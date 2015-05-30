@@ -115,7 +115,7 @@ void add(QUEUE *q, TYPE t, DATA d) {
 			strcpy(tmp->value, d);
 			break;
 		case INT:
-			//tmp->value = malloc(sizeof(int));		// necessary?
+			//tmp->value = malloc(sizeof(int));	// necessary?
 			tmp->value = d;
 			break;
 		case FLOAT:
@@ -162,7 +162,7 @@ void printQueueNode(LINK head, size_t cnt) {
 			printf("element %2d :: value = %s\n", cnt, head->value);
 			break;
 		case INT:
-			printf("element %2d :: value = %d\n", cnt, *(int *) &head->value);		// evil floating point bit level hacking
+			printf("element %2d :: value = %d\n", cnt, *(int *) &head->value);	// evil floating point bit level hacking
 			break;
 		case FLOAT:
 			printf("element %2d :: value = %f\n", cnt, *(double *) head->value);	// evil floating point bit level hacking (w/o extra pointer since its already a pointer)
